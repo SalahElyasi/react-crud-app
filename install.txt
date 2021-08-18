@@ -1,0 +1,38 @@
+npx create-react-app contact-app
+cd contact-app
+npm start
+
+https://cdnjs.com/libraries/semantic-ui
+copy to index.html--------> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+npm i uuidv4
+
+
+
+------------------------------------------------
+
+make "server-api" file to make json server
+
+cd server-api
+
+npm init --yes
+
+npm i --save json-server
+
+create "db.json" file
+
+------------
+change package.json file
+"scripts": {
+    "start":"json-server -p 3006 -w db.json"
+------------
+make another terminal and "cd server-api" and "npm start"
+
+cd contact-app
+
+npm i --save axios
+
+make ---> src/api/contacts.js
+
+
+
